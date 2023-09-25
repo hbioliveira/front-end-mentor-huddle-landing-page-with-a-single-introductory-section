@@ -96,36 +96,38 @@ button:hover {
 
 footer {
     display: flex;
-    margin-top: 2rem;
+    width: 100%;
+    justify-content: end;
+    align-items: start;
+    height: 100px;
+    gap: 10px;
+    padding-top: 20px;
+    padding-right: 0px;
 }
 
-footer .attribution { 
-    font-size: 11px; 
-    text-align: center;
-}
-
-footer .attribution a { 
-    color: var(--Soft-Magenta); 
-}
-
-footer .social-icons {
+footer a {
     display: flex;
-    text-align: right;
-}
-
-footer ul li a {
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
     border: 1px solid white;
     border-radius: 50%;
-    padding: 5px;
-    color: white;
+    font-size: 12px;
+}
+
+footer a:hover {
+    cursor: pointer;
+    color: var(--soft-magenta);
+    border: 2px solid var(--Soft-Magenta);
 }
 
 @media (max-width: 375px) {
     
     body {
         background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
+        background-position: top center;
+        background-size: contain;
         align-items: center;
         justify-content: center;
     
@@ -135,7 +137,7 @@ footer ul li a {
     }
 
     header {
-        margin-bottom: 3rem;
+        margin-bottom: 5rem;
         display: flex;
         align-items: center;
         justify-content: start;
@@ -188,9 +190,9 @@ footer ul li a {
     
     button {
         color: var(--Violet);
-        padding: .7rem 3.5rem;
+        padding: .7rem 5rem;
         border-radius: 3rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 400;
         border: none;
         box-shadow: 3px 3px 10px 3px rgb(56, 56, 56);
@@ -202,32 +204,32 @@ footer ul li a {
         color: white;
         background-color: var(--Soft-Magenta);
     }
-    
+
     footer {
         display: flex;
-        margin-top: 4rem;
+        width: 100%;
+        justify-content: center;
+        align-items: start;
+        height: 100px;
+        gap: 10px;
+        padding-top: 5rem;
+        padding-right: 0px;
     }
-    
-    footer .attribution { 
-        font-size: 11px; 
-        text-align: center;
-        position: relative; 
-    }
-    
-    footer .attribution a { 
-        color: var(--Soft-Magenta); 
-    }
-    
-    footer .social-icons {
+
+    footer a {
         display: flex;
-        text-align: right;
-        position: absolute;
-    }
-    
-    footer ul li a {
+        justify-content: center;
+        align-items: center;
+        width: 28px;
+        height: 28px;
         border: 1px solid white;
         border-radius: 50%;
-        padding: 5px;
-        color: white;
+        font-size: 12px;
+    }
+
+    footer a:hover {
+        cursor: pointer;
+        color: var(--soft-magenta);
+        border: 2px solid var(--Soft-Magenta);
     }
 }
